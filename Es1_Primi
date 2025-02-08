@@ -19,7 +19,7 @@ class Primi
     {
         int N;
         do {   
-            Console.Write("Inserisci un numero N: ");
+            Console.WriteLine("Inserisci un numero N: ");
         } while (!int.TryParse(Console.ReadLine(), out N));
 
         Console.WriteLine($"I numeri primi tra 1 e {N} sono:");
@@ -28,7 +28,7 @@ class Primi
         {
             if (new Primi().IsPrime(i))
             {
-                Console.Write(i + " ");
+                Console.WriteLine(i + " ");
             }
         }
     }
