@@ -9,7 +9,7 @@ class Program
         int livelloScelto;
         do
         {
-            Console.Write("Inserisci il numero del livello (1, 2, 3): ");
+            Console.WriteLine("Inserisci il numero del livello (1, 2, 3): ");
         } while (!int.TryParse(Console.ReadLine(), out livelloScelto) || (livelloScelto < 1 || livelloScelto > 3));
 
         int max = 0;
@@ -37,7 +37,7 @@ class Program
             int N;
             do
             {
-                Console.Write("Inserisci un numero N: ");
+                Console.WriteLine("Inserisci un numero N: ");
             } while (!int.TryParse(Console.ReadLine(), out N) || N < 1 || N > max);
 
             // Se è valido
